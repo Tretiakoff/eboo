@@ -331,12 +331,14 @@ h4 {
     margin-top: 254px;
     height: 62px;
     right: 21vw;
+    cursor: pointer;
 }
 
 .app-store {
     height: 42px;
     right: 11vw;
     margin-top: 257px;
+    cursor: pointer;
 }
 
 
