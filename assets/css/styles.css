@@ -267,6 +267,13 @@ h4 {
     margin-top: 7px;
 }
 
+h5{
+    color: #d1436f;
+    font-family: "Raleway SemiBold", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
 .pink-hr {
     width: 75px;
     border: 0;
@@ -343,6 +350,26 @@ h4 {
     right: 11vw;
     margin-top: 257px;
     cursor: pointer;
+}
+
+#advantages{
+    margin-top: 421px;
+}
+
+.divlist li{
+    display: inline-block;
+    float: left;
+}
+
+#advantages li{
+    margin: 50px;
+    width: 379px;
+}
+
+.advlogo{
+    width: 25%;
+    height: 25%;
+    margin-top: 35px;
 }
 
 @media (max-width: 1025px) {
