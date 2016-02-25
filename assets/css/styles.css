@@ -397,10 +397,40 @@ h5{
     width: 23vw;
 }
 
+@media (max-width: 650px) {
 
+    #project .text{
+        width: 75%;
+    }
 
+    .android{
+        visibility: hidden;
+    }
 
+    .iphone{
+        visibility: hidden;
+    }
 
-@media (max-width: 1025px) {
+    .text{
+        width: 75%;
+    }
 
+    #advantages li{
+        width: 75%;
+    }
+
+    #application div{
+        width: 75%;
+        display: inherit;
+        margin-left: 12%;
+        text-align: inherit;
+    }
+
+    .application-more{
+        visibility: hidden;
+    }
+
+    .google-play, .app-store{
+        visibility: hidden;
+    }
 }
