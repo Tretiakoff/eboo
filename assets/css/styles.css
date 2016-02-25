@@ -69,6 +69,34 @@ table {
     src: url(../fonts/raleway-extralightitalic.ttf);
 }
 
+/******************************* BOUNCE ******************************/
+@-webkit-keyframes bounce {
+  0%,20%,55%,80%,to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40%,45% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  70% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  90% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); } }
+@keyframes bounce {
+  0%,20%,55%,80%,to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40%,45% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  70% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  90% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); } }
+/****************************************************************************/
 body {
     font-family: "Raleway Light", sans-serif;
     background-color: #f1f1f1;
@@ -109,10 +137,6 @@ nav div {
     position: relative;
     top: -6px;
     left: 15px;
-}
-
-.left-nav span:hover {
-    text-decoration: underline;
 }
 
 .menu, .search {
@@ -168,7 +192,7 @@ ul li a:hover {
     margin-left: 39px;
 }
 
-.logo:hover, .sign-up:hover, .register:hover, .more:hover, .next:hover, .left-nav *:hover {
+.sign-up:hover, .register:hover, .more:hover, .next:hover {
     cursor: pointer;
 }
 
@@ -179,7 +203,7 @@ ul li a:hover {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
+    width: auto;
 }
 
 .titles {
@@ -213,6 +237,11 @@ ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 65px;
+    padding: 20px;
+}
+
+.next:hover{
+  animation: bounce 0.8s ease alternate;
 }
 
 .register, .more {
@@ -221,6 +250,7 @@ ul li a:hover {
     font-family: "Raleway SemiBold", sans-serif;
     color: #fff;
     font-size: 1em;
+    outline: none;
 }
 
 .header-btn {
@@ -241,6 +271,13 @@ ul li a:hover {
     background: -moz-linear-gradient(top, #ca437c 0%, #e7424a 100%);
     background: -webkit-linear-gradient(top, #ca437c 0%, #e7424a 100%);
     background: linear-gradient(to bottom, #ca437c 0%, #e7424a 100%);
+    border: 0;
+}
+
+.register:hover {
+    background: -moz-linear-gradient(top, #e7424a 0%, #ca437c 100%);
+    background: -webkit-linear-gradient(top, #e7424a 0%, #ca437c 100%);
+    background: linear-gradient(to bottom, #e7424a 0%, #ca437c 100%);
     border: 0;
 }
 
@@ -314,7 +351,6 @@ h5{
 
 #application > * {
     display: inline-block;
-    position: absolute;
 }
 
 .android {
@@ -322,6 +358,7 @@ h5{
     left: 9vw;
     margin-top: -109px;
     z-index: 1;
+    position: absolute;
 }
 
 .iphone {
@@ -329,10 +366,12 @@ h5{
     z-index: 0;
     left: 27vw;
     margin-top: 16px;
+    position: absolute;
 }
 
 #application div {
-    right: 12vw;
+    position: relative;
+    left: 15vw;
     margin-top: 55px;
     text-align: left;
     width: 26.9vw;
@@ -342,31 +381,38 @@ h5{
     padding-bottom: 5px;
 }
 
+.btnAppli{
+  margin: auto;
+  vertical-align: baseline;
+  width: 100%;
+  padding-bottom: 4%;
+}
+
 .application-more {
-    top: auto;
-    right: 28vw;
-    margin-top: 277px;
-    padding: 12px;
+  position: relative;
+  width: 10.3em;
+  vertical-align: bottom;
 }
 
 .google-play {
-    margin-top: 271px;
-    height: 58px;
-    right: 21.5vw;
-    cursor: pointer;
+  position: relative;
+  width: 5em;
+  height: 4em;
+  cursor: pointer;
+  vertical-align: bottom;
 }
 
 .app-store {
-    height: 40px;
-    right: 12vw;
-    margin-top: 281px;
-    cursor: pointer;
+  position: relative;
+  width: 5.7em;
+  cursor: pointer;
+  vertical-align: bottom;
 }
 #advantages li {
     position: absolute;
 }
 #advantages{
-    margin-top: 421px;
+    margin-top: 61px;
 }
 
 .advantages-logo {
