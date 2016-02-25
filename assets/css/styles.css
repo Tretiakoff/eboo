@@ -411,21 +411,18 @@ h5{
 }
 
 #booksellers{
-    margin-top: 3%;
+    margin-top: 2%;
     padding: 4%;
     background-image: url("../../assets/img/appbg.png");
     height: 400px;
 }
 
 #booksellers div{
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
-.slider {
-    overflow: auto;
-    position: relative;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
+#booksellers h3{
+    color: #d1436f;
 }
 
 .unslider-nav{
@@ -434,6 +431,34 @@ h5{
 
 .unslider-arrow.next{
     top: inherit;
+}
+
+.whiterec{
+    display: inline-block;
+    background-color: white;
+    width: 50%;
+    padding: 2rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.annaimg{
+    display: inline-block;
+    width: 12%;
+    height: 12%;
+    margin: 35px 0 0 14%;
+    float: left;
+}
+
+.pinkanna{
+    color: #d1436f;
+}
+
+.unslider-arrow{
+    color: #dc88a2;
+    margin-top: 4%;
+    font-size: 6em;
+    font-weight: 900;
 }
 
 @media (max-width: 1025px) {
