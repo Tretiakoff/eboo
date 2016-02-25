@@ -117,7 +117,14 @@ nav div {
 
 .menu, .search {
     height: 25px;
+
 }
+
+.search {
+    display: none;
+}
+
+
 
 .search {
     margin-left: 35px;
@@ -351,26 +358,43 @@ h5{
     margin-top: 257px;
     cursor: pointer;
 }
-
+#advantages li {
+    position: absolute;
+}
 #advantages{
     margin-top: 421px;
 }
 
-.divlist li{
-    display: inline-block;
-    float: left;
+.advantages-logo {
+    height: 50px;
 }
 
-#advantages li{
-    margin: 50px;
-    width: 379px;
+.simplicity-text {
+    left:3vw;
 }
 
-.advlogo{
-    width: 25%;
-    height: 25%;
-    margin-top: 35px;
+.community-text{
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
+
+.intuitive-text {
+    right: 3vw;
+}
+
+.advantages-text {
+    margin-top: 40px;
+}
+
+.advantages-text li .text {
+    width: 30vw;
+}
+
+
+
+
 
 @media (max-width: 1025px) {
 
