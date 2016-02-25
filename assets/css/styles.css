@@ -111,6 +111,10 @@ nav div {
     left: 15px;
 }
 
+.left-nav span:hover {
+    text-decoration: underline;
+}
+
 .menu, .search {
     height: 25px;
 }
@@ -157,7 +161,7 @@ ul li a:hover {
     margin-left: 39px;
 }
 
-.sign-up:hover, .register:hover, .more:hover, .next:hover, .left-nav *:hover {
+.logo:hover, .sign-up:hover, .register:hover, .more:hover, .next:hover, .left-nav *:hover {
     cursor: pointer;
 }
 
@@ -287,7 +291,7 @@ h4 {
     margin-top: 16px;
 }
 
-#application{
+#application {
     background-color: #f0eded;
 }
 
@@ -327,7 +331,7 @@ h4 {
     padding: 12px;
 }
 
-.google-play{
+.google-play {
     margin-top: 254px;
     height: 62px;
     right: 21vw;
@@ -340,8 +344,6 @@ h4 {
     margin-top: 257px;
     cursor: pointer;
 }
-
-
 
 @media (max-width: 1025px) {
 

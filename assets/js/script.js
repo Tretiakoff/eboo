@@ -1,4 +1,6 @@
 $(function () {
+    /* Smooth scroll */
+
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -19,6 +21,16 @@ $(function () {
 
         event.preventDefault();
     }
+
+    /* On click events */
+
+    document.querySelectorAll('.logo')[0].onclick = function () {
+        window.open('./', '_self');
+    };
+
+    document.querySelectorAll('.next')[0].onclick = function () {
+        smoothScroll('#project');
+    };
 
     document.querySelectorAll('.sign-up')[0].onclick = function () {
         smoothScroll('#register');
