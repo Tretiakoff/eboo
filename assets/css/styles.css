@@ -192,9 +192,6 @@ ul li a:hover {
     margin-left: 39px;
 }
 
-<<<<<<< HEAD
-.sign-up:hover, .register:hover, .more:hover, .next:hover {
-=======
 .sign-up:hover {
     color: #ccbdb5;
     background-color: white;
@@ -202,7 +199,6 @@ ul li a:hover {
 }
 
 .logo:hover, .sign-up:hover, .register:hover, .more:hover, .next:hover, .left-nav *:hover {
->>>>>>> origin/master
     cursor: pointer;
 }
 
@@ -381,13 +377,9 @@ h5{
 }
 
 #application div {
-<<<<<<< HEAD
     position: relative;
     left: 15vw;
-    margin-top: 55px;
-=======
-    margin-top: 5%;
->>>>>>> origin/master
+    margin-top: 2%;
     text-align: left;
     margin-left: 11%;
     width: 26.9vw;
@@ -428,12 +420,9 @@ h5{
     position: absolute;
 }
 #advantages{
-<<<<<<< HEAD
     margin-top: 61px;
-=======
     margin-top: 40px;
     height: 500px;
->>>>>>> origin/master
 }
 
 .advantages-logo {
