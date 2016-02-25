@@ -1,13 +1,25 @@
-window.onload = function () {
+$(function () {
+    function smoothScroll(page) {
+        $('html, body').animate({
+            scrollTop: $(page).offset().top
+        }, 750);
+
+        event.preventDefault();
+    }
+
     document.querySelectorAll('.sign-up')[0].onclick = function () {
-        window.open('#register', '_self');
+        smoothScroll('#register');
     };
 
     document.querySelectorAll('.register')[0].onclick = function () {
-        window.open('#register', '_self');
+        smoothScroll('#register');
     };
 
     document.querySelectorAll('.more')[0].onclick = function () {
-        window.open('#more', '_self');
+        smoothScroll('#more');
     };
-};
+
+    document.querySelectorAll('.next')[0].onclick = function () {
+        smoothScroll('#project');
+    };
+});
