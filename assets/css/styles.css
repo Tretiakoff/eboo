@@ -192,7 +192,17 @@ ul li a:hover {
     margin-left: 39px;
 }
 
+<<<<<<< HEAD
 .sign-up:hover, .register:hover, .more:hover, .next:hover {
+=======
+.sign-up:hover {
+    color: #ccbdb5;
+    background-color: white;
+    transition: ease .3s;
+}
+
+.logo:hover, .sign-up:hover, .register:hover, .more:hover, .next:hover, .left-nav *:hover {
+>>>>>>> origin/master
     cursor: pointer;
 }
 
@@ -346,7 +356,8 @@ h5{
 }
 
 #application {
-    background-color: #f0eded;
+    height: 375px;
+    background-image: url("../../assets/img/appbg.png");
 }
 
 #application > * {
@@ -370,10 +381,15 @@ h5{
 }
 
 #application div {
+<<<<<<< HEAD
     position: relative;
     left: 15vw;
     margin-top: 55px;
+=======
+    margin-top: 5%;
+>>>>>>> origin/master
     text-align: left;
+    margin-left: 11%;
     width: 26.9vw;
 }
 
@@ -412,7 +428,12 @@ h5{
     position: absolute;
 }
 #advantages{
+<<<<<<< HEAD
     margin-top: 61px;
+=======
+    margin-top: 40px;
+    height: 500px;
+>>>>>>> origin/master
 }
 
 .advantages-logo {
@@ -424,8 +445,17 @@ h5{
     left:3vw;
 }
 
+#advantages ul{
+    margin-left: 4%;
+}
+
+#advantages li {
+    margin: 41px;
+    width: 26%
+}
+
 .community-text{
-    left: 0;
+    left: 34%;
     right: 0;
     margin-left: 0;
     margin-right: 0;
@@ -439,14 +469,104 @@ h5{
     margin-top: 40px;
 }
 
-.advantages-text li .text {
-    width: 23vw;
+#booksellers{
+    margin-top: 3%;
+    padding: 4%;
+    background-image: url("../../assets/img/appbg.png");
+    height: 400px;
 }
 
+#booksellers div{
+    margin-top: 3%;
+}
 
+.slider {
+    overflow: auto;
+    position: relative;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
 
+.unslider-nav{
+    display: none;
+}
 
+.unslider-arrow.next{
+    top: inherit;
+}
 
 @media (max-width: 1025px) {
 
+    .advantages-text li .text {
+        width: 23vw;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .right-nav{
+        position: relative;
+        display: block;
+        visibility: hidden;
+        float: left;
+        height: 300px;
+        line-height: 3rem;
+        width: 35%;
+        margin-top: 20px;
+        background-color: #2c3438;
+        padding: 5px;
+        z-index: 2;
+    }
+
+    .right-nav ul{
+        position: absolute;
+    }
+
+    .right-nav li{
+        margin-top: 10px;
+    }
+
+    .sign-up{
+        margin-left: 5px;
+        margin-top: 245px;
+    }
+
+    .left-nav:hover .right-nav{
+        visibility: visible;
+    }
+
+    #project .text{
+        width: 75%;
+    }
+
+    .android{
+        visibility: hidden;
+    }
+
+    .iphone{
+        visibility: hidden;
+    }
+
+    .text{
+        width: 75%;
+    }
+
+    #advantages li{
+        width: 75%;
+    }
+
+    #application div{
+        width: 75%;
+        display: inherit;
+        margin-left: 12%;
+        text-align: inherit;
+    }
+
+    .application-more{
+        visibility: hidden;
+    }
+
+    .google-play, .app-store{
+        visibility: hidden;
+    }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>eBoo</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/js/unslider-master/dist/css/unslider.css">
 </head>
 <body>
 <header>
@@ -144,6 +145,21 @@
         </ul>
     </div>
 </section>
+<section id="booksellers">
+    <h3>Les libraires parlent de nous</h3><br>
+    <div>
+        <div class="infinite-slider">
+            <ul>
+                <li>
+                    <img src="assets/img/community.png">
+                </li>
+                <li>
+                    <img src="assets/img/community.png">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 <footer>
 
@@ -151,5 +167,13 @@
 
 <script src="assets/js/jquery-2.2.1.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/unslider-master/src/js/unslider.js"></script>
+<script>
+    $(function() {
+        $('.infinite-slider').unslider({
+            infinite: true
+        });
+    })
+</script>
 </body>
 </html>
