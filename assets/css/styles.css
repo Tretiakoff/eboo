@@ -117,7 +117,14 @@ nav div {
 
 .menu, .search {
     height: 25px;
+
 }
+
+.search {
+    display: none;
+}
+
+
 
 .search {
     margin-left: 35px;
@@ -298,11 +305,13 @@ h5{
     font-size: .9em;
     line-height: 1.7;
     color: #564c49;
+    margin-top: 1px;
 }
 
 #project .text {
     margin-top: 16px;
-    width: 42%;
+    width: 45vw;
+    line-height: 1.8;
 }
 
 #application {
@@ -333,7 +342,7 @@ h5{
     margin-top: 5%;
     text-align: left;
     margin-left: 11%;
-    width: 30%;
+    width: 26.9vw;
 }
 
 #application div h3 {
@@ -343,51 +352,73 @@ h5{
 .application-more {
     top: auto;
     right: 28vw;
-    margin-top: 258px;
+    margin-top: 277px;
     padding: 12px;
 }
 
 .google-play {
-    margin-top: 254px;
-    height: 62px;
-    right: 21vw;
+    margin-top: 271px;
+    height: 58px;
+    right: 21.5vw;
     cursor: pointer;
 }
 
 .app-store {
-    height: 42px;
-    right: 11vw;
-    margin-top: 257px;
+    height: 40px;
+    right: 12vw;
+    margin-top: 281px;
     cursor: pointer;
 }
-
+#advantages li {
+    position: absolute;
+}
 #advantages{
     margin-top: 40px;
     height: 500px;
 }
 
-.divlist li{
-    display: inline-block;
-    float: left;
+.advantages-logo {
+    height: 93px;
+    margin-top: 32px;
+}
+
+.simplicity-text {
+    left:3vw;
 }
 
 #advantages ul{
     margin-left: 4%;
 }
 
-#advantages li{
+#advantages li {
     margin: 41px;
     width: 26%
 }
 
-.advlogo{
-    width: 25%;
-    height: 25%;
-    margin-top: 35px;
+.community-text{
+    left: 34%;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.intuitive-text {
+    right: 3vw;
+}
+
+.advantages-text {
+    margin-top: 40px;
 }
 
 #booksellers{
-    height: 300px;
+    margin-top: 3%;
+    padding: 4%;
+    background-image: url("../../assets/img/appbg.png");
+    height: 400px;
+}
+
+#booksellers div{
+    margin-top: 3%;
 }
 
 .slider {
@@ -397,8 +428,19 @@ h5{
     touch-action: pan-y;
 }
 
+.unslider-nav{
+    display: none;
+}
+
+.unslider-arrow.next{
+    top: inherit;
+}
+
 @media (max-width: 1025px) {
 
+    .advantages-text li .text {
+        width: 23vw;
+    }
 }
 
 @media (max-width: 650px) {

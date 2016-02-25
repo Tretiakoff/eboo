@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>eBoo</title>
-    <script src="assets/js/jquery-2.2.1.min.js"></script>
-    <script src="assets/js/jwilsson-AnySlider-889e6d8/src/jquery.anyslider.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script>
-        $('.slider').anyslider({
-        });
-    </script>
+    <link rel="stylesheet" href="assets/js/unslider-master/dist/css/unslider.css">
 </head>
 <body>
 <header>
@@ -105,8 +100,8 @@
             small batch stumptown tousled
         </h4>
         <hr class="pink-hr">
-        <ul class="divlist">
-            <li>
+        <ul class="advantages-text">
+            <li class="simplicity-text">
                 <h5>Simplicite</h5>
                 <p class="text">
                     Squid portland fashion axe kitsch. Brunch listicle
@@ -116,9 +111,10 @@
                     tacos. Bespoke direct trade flexitarian, mixtape marfa
                     offal cronut blog bushwick.
                 </p>
-                <img src="assets/img/simplicity.png" class="advlogo">
+                <br>
+                <img src="assets/img/simplicity.png" class="advantages-logo">
             </li>
-            <li>
+            <li class="community-text">
                 <h5>Communautaire</h5>
                 <p class="text">
                     Squid portland fashion axe kitsch. Brunch listicle
@@ -128,9 +124,10 @@
                     tacos. Bespoke direct trade flexitarian, mixtape marfa
                     offal cronut blog bushwick.
                 </p>
-                <img src="assets/img/community.png" class="advlogo">
+                <br>
+                <img src="assets/img/community.png" class="advantages-logo">
             </li>
-            <li>
+            <li class="intuitive-text">
                 <h5>Intuitif</h5>
                 <p class="text">
                     Squid portland fashion axe kitsch. Brunch listicle
@@ -140,7 +137,8 @@
                     tacos. Bespoke direct trade flexitarian, mixtape marfa
                     offal cronut blog bushwick.
                 </p>
-                <img src="assets/img/intuitive.png" class="advlogo">
+                <br>
+                <img src="assets/img/intuitive.png" class="advantages-logo">
             </li>
         </ul>
     </div>
@@ -148,16 +146,15 @@
 <section id="booksellers">
     <h3>Les libraires parlent de nous</h3><br>
     <div>
-        <div class="slider">
-            <div>
-                The first slide.
-            </div>
-            <div>
-                Another slide.
-            </div>
-            <div>
-                And so on.
-            </div>
+        <div class="infinite-slider">
+            <ul>
+                <li>
+                    <img src="assets/img/community.png">
+                </li>
+                <li>
+                    <img src="assets/img/community.png">
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -168,5 +165,13 @@
 
 <script src="assets/js/jquery-2.2.1.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/unslider-master/src/js/unslider.js"></script>
+<script>
+    $(function() {
+        $('.infinite-slider').unslider({
+            infinite: true
+        });
+    })
+</script>
 </body>
 </html>
