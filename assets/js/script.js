@@ -16,7 +16,7 @@ $(function () {
     };
 
     document.querySelectorAll('.more')[0].onclick = function () {
-        smoothScroll('#more');
+        smoothScroll('#project');
     };
 
     document.querySelectorAll('.next')[0].onclick = function () {

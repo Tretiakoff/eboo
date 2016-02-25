@@ -100,8 +100,9 @@ nav div {
 }
 
 .left-nav {
-    width: 400px;
+    width: 255px;
     margin-left: 20px;
+
 }
 
 .left-nav span {
@@ -141,7 +142,7 @@ ul li a:hover {
 .right-nav ul, .sign-up {
     display: inline-block;
     position: relative;
-    top: -6px;
+    top: -3px;
 }
 
 .sign-up {
@@ -249,13 +250,13 @@ section {
     padding: 45px 0;
 }
 
-section h3 {
+h3 {
     font-size: 1.8em;
     font-family: "Raleway SemiBold", sans-serif;
     text-transform: uppercase;
 }
 
-section h4 {
+h4 {
     font-size: .8em;
     color: #423936;
     line-height: 1.5;
@@ -280,8 +281,65 @@ section h4 {
     font-size: .9em;
     line-height: 1.7;
     color: #564c49;
+}
+
+#project .text {
     margin-top: 16px;
 }
+
+#application{
+    background-color: #f0eded;
+}
+
+#application > * {
+    display: inline-block;
+    position: absolute;
+}
+
+.android {
+    height: 500px;
+    left: 9vw;
+    margin-top: -109px;
+    z-index: 1;
+}
+
+.iphone {
+    height: 350px;
+    z-index: 0;
+    left: 27vw;
+    margin-top: 16px;
+}
+
+#application div {
+    right: 12vw;
+    margin-top: 55px;
+    text-align: left;
+}
+
+#application div h3 {
+    padding-bottom: 5px;
+}
+
+.application-more {
+    top: auto;
+    right: 28vw;
+    margin-top: 258px;
+    padding: 12px;
+}
+
+.google-play{
+    margin-top: 254px;
+    height: 62px;
+    right: 21vw;
+}
+
+.app-store {
+    height: 42px;
+    right: 11vw;
+    margin-top: 257px;
+}
+
+
 
 @media (max-width: 1025px) {
 
